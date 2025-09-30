@@ -20,15 +20,15 @@ app = FastAPI(
     description="""
     API unificada para aprovisionar y gestionar máquinas virtuales en diferentes proveedores cloud.
     
-    ## Características principales:
+    Características principales:
     
-    * ✅ **Aprovisionamiento Multi-Cloud**: Crea VMs en AWS, Azure, GCP y On-Premise
-    * ✅ **Patrón Factory Method**: Arquitectura extensible y mantenible
-    * ✅ **Gestión de VMs**: Consulta, filtra y actualiza máquinas virtuales
-    * ✅ **Estadísticas**: Resúmenes y métricas por proveedor
-    * ✅ **Seguridad**: Logs sanitizados y validación de parámetros
+     ✅ Aprovisionamiento Multi-Cloud: Crea VMs en AWS, Azure, GCP y On-Premise
+     ✅ Patrón Factory Method: Arquitectura extensible y mantenible
+     ✅ Gestión de VMs: Consulta, filtra y actualiza máquinas virtuales
+     ✅ Estadísticas: Resúmenes y métricas por proveedor
+     ✅ Seguridad: Logs sanitizados y validación de parámetros
     
-    ## Proveedores soportados:
+    Proveedores soportados:
     - AWS EC2
     - Azure Virtual Machines  
     - Google Cloud Compute Engine
@@ -114,23 +114,23 @@ async def get_available_providers():
           
           ### Parámetros por proveedor:
           
-          **AWS**:
+          AWS:
           - instance_type (ej: t2.micro)
           - region (ej: us-east-1) 
           - vpc (ej: vpc-123456)
           - ami (ej: ami-0abcdef1234567890)
           
-          **Azure**:
+          Azure:
           - vm_size (ej: Standard_B1s)
           - resource_group (ej: my-resource-group)
           - location (ej: eastus)
           
-          **GCP**:
+          GCP:
           - machine_type (ej: n1-standard-1)
           - zone (ej: us-central1-a)
           - project_id (ej: my-project-123)
           
-          **On-Premise**:
+          On-Premise:
           - cpu_cores (ej: 2)
           - ram_gb (ej: 4)
           - storage_gb (ej: 50)
