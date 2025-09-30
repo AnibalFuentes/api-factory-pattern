@@ -1,0 +1,18 @@
+{
+  "vms": {
+    "i-5dd1812f": {
+      "vm_id": "i-5dd1812f",
+      "provider_type": "aws",
+      "status": "stopped",
+      "instance_type": "t2.micro",
+      "region": "us-east-1",
+      "created_at": "2025-09-30T12:10:50.368640",
+      "parameters": {
+        "instance_type": "t2.micro",
+        "region": "us-east-1",
+        "vpc": "vpc-123456",
+        "ami": "ami-0abcdef1234567890"
+      }
+    }
+  }
+}
